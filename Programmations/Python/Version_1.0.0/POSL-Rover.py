@@ -3,9 +3,15 @@
 
 # -- IMPORTATION --
 
-#import Tkinter as tk
-import tkinter as tk
+#Librairies standards
+import sys
 import serial
+
+#Librariries graphique en fonction de la version de Python
+if sys.version_info[0]>=2:
+    import Tkinter as tk
+else:
+    import tkinter as tk
 
 # -- INTERFACE GRAPHIQUE
 class iface1(tk.Frame):
