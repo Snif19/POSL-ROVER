@@ -3,12 +3,11 @@
 
 # -- IMPORTATION --
 
-#Librairies standards
 import sys
 import serial
 
-#Librariries graphique en fonction de la version de Python
-if sys.version_info[0]>=2:
+#Librairie graphique en fonction de la version Python utilisé
+if sys.version_info[0]==2:
     import Tkinter as tk
 else:
     import tkinter as tk
